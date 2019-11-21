@@ -1,6 +1,6 @@
 <?php
+ header("Access-Control-Allow-Origin: *");
 
-error_reporting(1);
 $db_host = "localhost";
 $db_name = "api";
 $db_user = "root";
@@ -32,15 +32,18 @@ if(isset($_POST['ok-login'])) {
 if(isset($_POST['ok-signup'])) {
     $username = trim(addslashes($_POST['username']));
     $password = trim(addslashes($_POST['password']));
+    $email = trim(addslashes($_POST['email']));
 
     $query = "INSERT INTO users SET username = '$username', password = '$password', email = '$email'";
-    $sql = mysqli_connect($connection,$query);
+    $sql = mysqli_query($connection,$query);
     
-    if(sql == 1) {
+    if($sql) {
         $out = array('status' => 1, 'message' => 'Registered Successfully');
     } else {
         $out = array('status' => 0, 'message' => 'Unable to register');
     }
+
+    echo json_encode($out);
 }
 
 ?>

@@ -23,9 +23,9 @@ $(document).ready(function() {
     })
 
     $('#signup-button').click(function() {
-        let username = $("#username").val();
-        let password = $("#password").val();
-        let email = $("#email").val();
+        let username = $("#Susername").val();
+        let password = $("#Spassword").val();
+        let email = $("#Semail").val();
 
         $.ajax({
             url: 'api.php',
@@ -41,7 +41,7 @@ $(document).ready(function() {
 
             },
             error: function(){
-                
+
             }
         })
     })
