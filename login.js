@@ -21,4 +21,9 @@ $(document).ready(function() {
             }
         })
     })
+
+    $('#signup-button').click(function() {
+        let username = $("#username").val();
+        let password = $("#password").val();
+    })
 })

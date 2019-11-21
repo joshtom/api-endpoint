@@ -106,18 +106,18 @@
         <div class="form-group">
         	<div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                <input type="text" class="form-control" name="email" placeholder="Email" required="required">				
+                <input type="text" class="form-control" name="email" id="email" placeholder="Email" required="required">				
             </div>
             <div class="form-group">
         	<div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                <input type="text" class="form-control" name="username" placeholder="Username" required="required">				
+                <input type="text" class="form-control" name="username" id="username" placeholder="Username" required="required">				
             </div>
         </div>
 		<div class="form-group">
             <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                <input type="password" class="form-control" name="password" placeholder="Password" required="required">				
+                <input type="password" class="form-control" name="password" id="password" placeholder="Password" required="required">				
             </div>
         </div>        
         <div class="form-group">
