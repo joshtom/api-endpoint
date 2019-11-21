@@ -25,5 +25,24 @@ $(document).ready(function() {
     $('#signup-button').click(function() {
         let username = $("#username").val();
         let password = $("#password").val();
+        let email = $("#email").val();
+
+        $.ajax({
+            url: 'api.php',
+            type: 'POST',
+            data: {
+                'ok-signup': '1',
+                'email':email,
+                'username':username,
+                'password':password,
+            },
+            dataType: 'json',
+            success: function() {
+
+            },
+            error: function(){
+                
+            }
+        })
     })
 })

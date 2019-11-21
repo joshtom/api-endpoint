@@ -33,7 +33,7 @@ if(isset($_POST['ok-signup'])) {
     $username = trim(addslashes($_POST['username']));
     $password = trim(addslashes($_POST['password']));
 
-    $query = "INSERT INTO users SET username = '$username', password = '$password'";
+    $query = "INSERT INTO users SET username = '$username', password = '$password', email = '$email'";
     $sql = mysqli_connect($connection,$query);
     
     if(sql == 1) {
