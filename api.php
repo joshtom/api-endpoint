@@ -29,5 +29,18 @@ if(isset($_POST['ok-login'])) {
     echo json_encode($out);
     
 }
+if(isset($_POST['ok-signup'])) {
+    $username = trim(addslashes($_POST['username']));
+    $password = trim(addslashes($_POST['password']));
+
+    $query = "INSERT INTO users SET username = '$username', password = '$password'";
+    $sql = mysqli_connect($connection,$query);
+    
+    if(sql == 1) {
+        $out = array('status' => 1, 'message' => 'Registered Successfully');
+    } else {
+        $out = array('status' => 0, 'message' => 'Unable to register');
+    }
+}
 
 ?>

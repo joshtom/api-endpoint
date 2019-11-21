@@ -121,7 +121,7 @@
             </div>
         </div>        
         <div class="form-group">
-            <button type="submit" class="btn btn-primary login-btn btn-block">Sign Up</button>
+            <button type="submit" class="btn btn-primary login-btn btn-block" id="signup-button">Sign Up</button>
         </div>
         <div class="clearfix">
             <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
