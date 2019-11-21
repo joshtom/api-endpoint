@@ -137,5 +137,7 @@
     </form>
     <p class="text-center text-muted small">Don't have an account? <a href="#">Sign up here!</a></p>
 </div>
+
+<script src="login.js"></script>
 </body>
 </html>                            
